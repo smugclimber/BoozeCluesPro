@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3mobile.css">
+	<!-- Materialize -->
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<!-- Materialize fonts for icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- CSS  -->
+	<link rel="stylesheet" href="/css/style.css" type="text/css">
+	<title>Booze Clues</title>
+  <link rel="shortcut icon" href="./images/BC_Logo_icon.png" type="image/vnd.microsoft.icon">
+
+
+</head>
+
+<body>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="/" class="brand-logo center">BoozeClues</a>
+			<!-- <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a> -->
+			<ul class="right">
+				{{#if user}}
+			<!-- 	<li>
+					<a href="/user">Dashboard</a>
+				</li>
+				<li>
+					<a href="/usergame">User</a>
+				</li>
+				<li> -->
+					<a href="/logout">Logout</a>
+				</li>
+				{{else}}
+
+				<li>
+					<a href="/login">Login</a>
+				</li>
+			   {{/if}}
+			</ul>
+			<!-- <ul class="right-align show-on-small hide-on-med-and-down">
+	      <li class="active">
+	          <a href="">Login</a></li>
+	    </ul> -->
+
+		</div>
+	</nav>
+
+	<div class="container">
+		{{#if success_msg}}
+		<div class ="alert alert-success">{{success_msg}}</div>
+		{{/if}}
+
+		{{#if success_msg}}
+		<div class ="alert alert-danger">{{error_msg}}</div>
+		{{/if}}
+
+		{{#if success_msg}}
+		<div class ="alert alert-danger">{{error}}</div>
+		{{/if}}
+
+		{{{body}}}
+
+	</div>
+
+
+	<footer class="footer center">
+		<p>&copy; Boozeclues 2017</p>
+	</footer>
+	<script>
+		$(document).ready(function() {
+			$('.dropdown-button').dropdown('open');
+			// $(".button-collapse").sideNav();
+		});
+	</script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+</html>

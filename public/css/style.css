@@ -1,0 +1,58 @@
+body {
+    background-color: white;
+}
+/* MAIN PAGE */
+#logoIcon {
+    padding-top: 25pt;
+    font-size: 150pt;
+    color: fff;
+    /* text-align: center; */
+}
+
+#signUpButton {
+    background-color: light-green;
+    color: white;
+}
+
+#sbtn{
+    background-color: ;
+    border-radius: 25pt;
+}
+#sbtn:hover{
+    background-color: red;
+}
+
+#sideInfo{
+    padding: 0 15pt 0 15pt;
+}
+
+#joinGameForm {
+    padding: 0 40px 0 40px;
+}
+/* USER GAME SCREEN */
+.opt{
+    text-align: auto;
+    height: 80pt;
+    color: white;
+    background-color: blue;
+}
+
+#test{
+    text-align: center;
+}
+
+#timer {
+	height: 20vh;
+	background-color: green;
+	font-size: 2.5em;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	transition: background-color 0.5s ease;
+	margin: 0 auto;
+}
+
+label {
+	color: white;
+	font-size: 1.5rem;
+}
